@@ -21,7 +21,7 @@ apache_vhosts:
   # 'serveradmin, serveralias, allow_override, options, extra_parameters'.
   - servername: "local.dev"
     documentroot: "/var/www/html"
-    # lb_name: "myapp1"
+    lb_name: "myapp1"
 
 apache_allow_override: "All"
 apache_options: "-Indexes +FollowSymLinks"
@@ -61,10 +61,10 @@ apache_restart_state: restarted
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
 
-enable_apache_lb: true
-load_balancer_is_required: true
+enable_apache_lb: false
+load_balancer_is_required: false
 
 # DNS Mapping for webservers
-# lb_name: "myapp1"
-web1: 172.31.47.1
-web2: 172.31.39.199
+lb_name: "myapp1"
+ip-172.31.39.120.us-east-1.compute.internal: 172.31.39.120
+ip-172.31.33.148.us-east-1.compute.internal: 172.31.33.148
