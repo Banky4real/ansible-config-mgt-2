@@ -4,4 +4,4 @@ Changes Made
 Elastic IP
 ansible-config-artifact
 Updating 
-save artifact
+save artifacts
