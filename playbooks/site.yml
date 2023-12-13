@@ -1,11 +1,15 @@
 ---
-- hosts: nginx
-- name: nginx assignment
-  import_playbook: ../static-assignments/nginx.yml
+- hosts: artifactory
+- name: artifactory assignment
+  import_playbook: ../static-assignments/artifactory.yml
 
-- hosts: db
-- name: database assignment
-  import_playbook: ../static-assignments/db.yml
+# - hosts: nginx
+# - name: nginx assignment
+#   import_playbook: ../static-assignments/nginx.yml
+
+# - hosts: db
+# - name: database assignment
+#   import_playbook: ../static-assignments/db.yml
 
 # - hosts: all
 # - name: Include dynamic variables 
