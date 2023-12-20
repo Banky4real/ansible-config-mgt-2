@@ -7,13 +7,13 @@
 # - name: nginx assignment
 #   import_playbook: ../static-assignments/nginx.yml
 
-- hosts: todo
-- name: Deploy the todo application
-  import_playbook: ../static-assignments/todo.yml
+# - hosts: todo
+# - name: Deploy the todo application
+#   import_playbook: ../static-assignments/todo.yml
 
-# - hosts: db
-# - name: database assignment
-#   import_playbook: ../static-assignments/db.yml
+- hosts: db
+- name: database assignment
+  import_playbook: ../static-assignments/db.yml
 
 # - hosts: all
 # - name: Include dynamic variables 
