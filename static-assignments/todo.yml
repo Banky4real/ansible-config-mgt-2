@@ -50,10 +50,10 @@
 
     - name: Download the artifact
       get_url:
-        url: http://54.172.215.226:8082/artifactory/PBL-Learning/php-todo
+        url: http://44.201.123.21:8082/artifactory/PBL-Learning/php-todo
         dest: /home/ec2-user/
         url_username: admin
-        url_password: cmVmdGtuOjAxOjE3Mjk4OTQzMjU6a1p3OVh2bzAwN0FGcVN1b2VjSFBCSms0WUZ6
+        url_password: cmVmdGtuOjAxOjE3MzQ2MzM0NzQ6U0ZkaEpyUHV3NUVvNkdiOHc1Wk1kMGV2S1p0
 
     - name: unzip the artifacts
       ansible.builtin.unarchive:
