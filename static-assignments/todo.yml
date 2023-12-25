@@ -53,7 +53,7 @@
         url: http://44.201.123.21:8082/artifactory/PBL-Learning/php-todo
         dest: /home/ec2-user/
         url_username: admin
-        url_password: cmVmdGtuOjAxOjE3MzQ2MzM0NzQ6U0ZkaEpyUHV3NUVvNkdiOHc1Wk1kMGV2S1p0
+        url_password: cmVmdGtuOjAxOjE3MzUwMzM5MjI6T3NWUHBycm9yckdMVlRZRzU1emxZREl0bUh0
 
     - name: unzip the artifacts
       ansible.builtin.unarchive:
