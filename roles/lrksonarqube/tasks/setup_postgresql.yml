@@ -3,7 +3,7 @@
   become: yes
   ansible.builtin.lineinfile:
     path: /etc/apt/sources.list.d/pgdg.list
-    line: deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main
+    line: deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -cs'-pgdg main
     create: yes
 
 - name: Download PostgreSQL software key
